@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-universal-pre-render": {
+    "angular-pre-render-authentication": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -17,19 +17,14 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-universal-pre-render/browser",
+            "outputPath": "dist/angular-pre-render-authentication/browser",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "aot": true,
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.css"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
+            "styles": ["src/styles.css"],
             "scripts": []
           },
           "configurations": {
@@ -65,18 +60,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angular-universal-pre-render:build"
+            "browserTarget": "angular-pre-render-authentication:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular-universal-pre-render:build:production"
+              "browserTarget": "angular-pre-render-authentication:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-universal-pre-render:build"
+            "browserTarget": "angular-pre-render-authentication:build"
           }
         },
         "test": {
@@ -86,13 +81,8 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.css"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
+            "styles": ["src/styles.css"],
             "scripts": []
           }
         },
@@ -105,27 +95,25 @@
               "e2e/tsconfig.json",
               "tsconfig.server.json"
             ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "exclude": ["**/node_modules/**"]
           }
         },
         "e2e": {
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "angular-universal-pre-render:serve"
+            "devServerTarget": "angular-pre-render-authentication:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "angular-universal-pre-render:serve:production"
+              "devServerTarget": "angular-pre-render-authentication:serve:production"
             }
           }
         },
         "server": {
           "builder": "@angular-devkit/build-angular:server",
           "options": {
-            "outputPath": "dist/angular-universal-pre-render/server",
+            "outputPath": "dist/angular-pre-render-authentication/server",
             "main": "server.ts",
             "tsConfig": "tsconfig.server.json"
           },
@@ -146,24 +134,22 @@
         "serve-ssr": {
           "builder": "@nguniversal/builders:ssr-dev-server",
           "options": {
-            "browserTarget": "angular-universal-pre-render:build",
-            "serverTarget": "angular-universal-pre-render:server"
+            "browserTarget": "angular-pre-render-authentication:build",
+            "serverTarget": "angular-pre-render-authentication:server"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular-universal-pre-render:build:production",
-              "serverTarget": "angular-universal-pre-render:server:production"
+              "browserTarget": "angular-pre-render-authentication:build:production",
+              "serverTarget": "angular-pre-render-authentication:server:production"
             }
           }
         },
         "prerender": {
           "builder": "@nguniversal/builders:prerender",
           "options": {
-            "browserTarget": "angular-universal-pre-render:build:production",
-            "serverTarget": "angular-universal-pre-render:server:production",
-            "routes": [
-              "/"
-            ]
+            "browserTarget": "angular-pre-render-authentication:build:production",
+            "serverTarget": "angular-pre-render-authentication:server:production",
+            "routes": ["/"]
           },
           "configurations": {
             "production": {}
@@ -172,7 +158,7 @@
       }
     }
   },
-  "defaultProject": "angular-universal-pre-render",
+  "defaultProject": "angular-pre-render-authentication",
   "cli": {
     "analytics": "f33e8aef-82e4-48f9-97d1-73599e666adf"
   }

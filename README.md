@@ -1,14 +1,10 @@
-# ≧(´▽ ｀)≦ Angular Universal Pre-Render
-
-This project will guide you through the process of pre-rendering your Angular project using [Angular Universal](https://angular.io/guide/universal) and deploy it to a CDN with with [Netlify](https://www.netlify.com/?_ga=2.14078323.599079780.1612319207-1714706019.1588285059?utm_source=repo&utm_medium=au-pre-render-tzm&utm_campaign=devex).
-
-> 📓 [Check out this blog post](https://hubs.ly/H0GZfCp0) to get even more details about what's going on in this project.
+# φ(^∇^ ) Angular Universal Pre-Render w Authentication
 
 ## Setup
 
 To skip all this you could also just click this button:
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/tzmanics/angular-universal-pre-render&utm_source=github&utm_medium=ng-prerender-tzm&utm_campaign=devex)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/tzmanics/angular-pre-render-authentication&utm_source=github&utm_medium=ng-prerender-tzm&utm_campaign=devex)
 
 ### Local Setup
 

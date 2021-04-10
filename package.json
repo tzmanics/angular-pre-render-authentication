@@ -1,5 +1,5 @@
 {
-  "name": "angular-universal-pre-render",
+  "name": "angular-pre-render-authentication",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -8,10 +8,10 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "dev:ssr": "ng run angular-universal-pre-render:serve-ssr",
-    "serve:ssr": "node dist/angular-universal-pre-render/server/main.js",
-    "build:ssr": "ng build --prod && ng run angular-universal-pre-render:server:production",
-    "prerender": "ng run angular-universal-pre-render:prerender"
+    "dev:ssr": "ng run angular-pre-render-authentication:serve-ssr",
+    "serve:ssr": "node dist/angular-pre-render-authentication/server/main.js",
+    "build:ssr": "ng build --prod && ng run angular-pre-render-authentication:server:production",
+    "prerender": "ng run angular-pre-render-authentication:prerender"
   },
   "private": true,
   "dependencies": {
